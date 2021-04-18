@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src=`curl $1`
+src=`curl --silent $1`
 
 
 result=`echo $src | egrep -o "href=[\"']mailto:[\.a-zA-Z0-9-]+@[\.a-zA-Z0-9-]+[\"']"`
